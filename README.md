@@ -21,10 +21,10 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">AuthN Sandbox</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Demonstrates adding authentication methods as plugins for Vue/Quasar.
     <br />
     <a href="https://github.com/34fame/sandbox-authn"><strong>Explore the docs »</strong></a>
     <br />
@@ -61,10 +61,6 @@
 
 [![AuthN Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
-
 
 ### Built With
 
@@ -87,25 +83,52 @@ This is an example of how to list things you need to use the software and how to
 npm install npm@latest -g
 ```
 
+* Firebase account
+
 ### Installation
  
 1. Clone the repo
 ```sh
 git clone https://github.com/34fame/sandbox-authn.git
 ```
-2. Install NPM packages
+
+1. Install NPM packages
 ```sh
 npm install
 ```
 
+1. Create client environment files
+```sh
+cd client
+cp .env.template .env.development
+cp .env.template .env.production
+```
 
+1. Update environment files with Firebase project details
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Key Aspects -->
+## Key Aspects
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Services
+Under `client/src/services` you'll find core code for standing up authentication (and storage) options for the
+ application.  These services are called directly by your Vuex actions (or from your components).  These services
+  rely on plugins.
+  
+### Plugins
+The `client/src/plugins` directory contains all currently installed plugins, organized by their type.  Right now the
+ only included authentication plugin is for Firebase.  This plugin has support for many of the Firebase
+  Authentication service methods:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- Email/Password
+- Phone (SMS)
+- Google
+- Facebook
+- Twitter
+- GitHub
+
+### Setup
+
+...more details to come.
 
 
 
