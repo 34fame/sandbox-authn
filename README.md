@@ -159,7 +159,7 @@ Ideally a plugin would contain other artifacts that are unique to that plugin su
 
 ### End Goal
 
-Authentication plugins are for application owners.  This means they would be added to an application in much the same
+Authentication plugins are for developers.  This means they would be added to an application in much the same
  way a Quasar App Extension works.  Once installed the developer should be able to easily integrate its capabilities
   into their application with little effort.
   
