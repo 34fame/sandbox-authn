@@ -109,11 +109,23 @@ cp .env.template .env.production
 <!-- Key Aspects -->
 ## Key Aspects
 
+### Boot
+In order to support the Firebase Authentication methods a boot file for Firebase was created.  It initializes a
+ Firebase application instance as well as the auth service and the appropriate auth providers (e.g. Facebook, GitHub
+ , etc.).
+
 ### Services
 Under `client/src/services` you'll find core code for standing up authentication (and storage) options for the
- application.  These services are called directly by your Vuex actions (or from your components).  These services
+ application.  These services get called directly by your Vuex actions (or from your components).  These services
   rely on plugins.
-  
+
+A service at a minimum contains an `index.js` which exports all functions provided by the service.
+
+A service will always contain a `plugins.js` file which is what locates and includes plugins for that service.
+
+The authn service also contains a Vuex store ("auth") and the basic components for authentication (e.g. Login
+, Register, Logout, etc.).
+
 ### Plugins
 The `client/src/plugins` directory contains all currently installed plugins, organized by their type.  Right now the
  only included authentication plugin is for Firebase.  This plugin has support for many of the Firebase
@@ -126,6 +138,16 @@ The `client/src/plugins` directory contains all currently installed plugins, org
 - Twitter
 - GitHub
 
+A plugin must contain an `index.js` which exports all functions provided by the plugin.  These functions must match
+ the requirements of the service they support.  For example, an `authn` plugin must provide methods:
+ 
+- register
+- isAuthenticated
+- login
+- logout
+
+Ideally a plugin would contain other artifacts that are unique to that plugin such as components.
+
 ### Setup
 
 ...more details to come.
@@ -135,8 +157,13 @@ The `client/src/plugins` directory contains all currently installed plugins, org
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/34fame/sandbox-authn/issues) for a list of proposed features (and known issues).
+### End Goal
 
+Authentication plugins are for application owners.  This means they would be added to an application in much the same
+ way a Quasar App Extension works.  Once installed the developer should be able to easily integrate its capabilities
+  into their application with little effort.
+  
+This does assume the application is already using our authentication service.
 
 
 <!-- CONTRIBUTING -->
