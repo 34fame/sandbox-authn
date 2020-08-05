@@ -11,27 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cd6525a-d642-4756-98a8-35c8d3449a65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/.env.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/boot/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Private.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/plugins/authn/firebase/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/plugins/storage/cookies/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/plugins/storage/local/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/plugins/storage/session/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/components/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/components/Logout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/components/Phone.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/components/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/components/UsernamePassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/authn/store/store-auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/storage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/storage/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/store-flag.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/authn-service-account.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/functions/firebase/firestore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/functions/firebase/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596495785346</updated>
       <workItem from="1596495786553" duration="13110000" />
-      <workItem from="1596558438056" duration="29457000" />
+      <workItem from="1596558438056" duration="30363000" />
     </task>
     <servers />
   </component>
